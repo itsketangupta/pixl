@@ -505,7 +505,6 @@ a {
     padding: 20px;
 }
 
-
 .flow_bottom {
     position: relative;
     width: 100%;
@@ -541,7 +540,7 @@ a {
 .down-line {
     position: absolute;
     top: 83px;
-    left: 52.5%;
+    left: 50%;
     width: 5px;
     height: 70px;
     background: #000;
@@ -550,11 +549,57 @@ a {
 .down-arrow {
     position: absolute;
     top: 153px;
-    left: 52.5%;
+    left: 50.15%;
     transform: translateX(-50%);
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 20px solid #000;
+}
+
+.flow_arrow_bottom .bottom-line {
+    position: absolute;
+    top: 81px;
+    left: 25.8%;
+    width: 48.4%;
+    height: 5px;
+    background: #000;
+}
+
+.down_line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 5px;
+    height: 70px;
+    background: #000;
+}
+
+.down_arrow {
+    position: absolute;
+    top: 70px;
+    left: 50.15%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #000;
+}
+
+.flow-bottom {
+    position: relative;
+    width: 100%;
+    height: 92px;
+    background: #f5efd5;
+}
+
+.flow_cart_step3 {
+    border: 2px solid black;
+    display: flex;
+    width: 768px;
+    box-shadow: rgb(255, 140, 55) 6px 6px 0px;
+    height: 188px;
+    margin: 0 auto;
 }
