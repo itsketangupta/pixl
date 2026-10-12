@@ -249,6 +249,22 @@ a {
     gap: 30px;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.card_section_what_pixl .card:nth-child(4),
+.card_section_what_pixl .card:nth-child(5) {
+    height: 519px;
+}
+
+.card_section_what_pixl .card:nth-child(6) {
+    height: 519px;
+}
+
+.card_section_what_pixl .card .comeing_soon:nth-child(1) p,
+.card_section_what_pixl .card .comeing_soon:nth-child(2) p {
+    color: white;
+    text-align: center;
 }
 
 .card_section_what_pixl .card h3 {
@@ -270,11 +286,46 @@ a {
     width: 386px;
     height: 471px;
     overflow: hidden;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+.card_section_what_pixl .card video:hover {
+    box-shadow: 10px 10px black;
 }
 
 .card_section_what_pixl .card video {
-    width: 100%;
+    width: 370px;
     height: 350px;
+    box-shadow: 5px 5px black;
     object-fit: cover;
+}
+
+.comeing_soon {
+    width: 373px;
+    color: #ec3750;
+    height: 383px;
+    box-shadow: 5px 5px black;
+    background-color: #080808;
+    overflow: hidden;
+}
+
+.repair p,
+.core_pay p {
+    color: black !important;
+}
+
+.repair h3 {
+    color: #ff8c37;
+    text-align: left;
+    font-size: 48px !important;
+}
+
+.repair {
+    height: 226px;
+}
+
+.core_pay h3 {
+    color: #ec3750;
+    text-align: left;
+    font-size: 48px !important;
 }
