@@ -5,10 +5,10 @@
     padding: 0;
     font-family: "Pixelify Sans", sans-serif;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scrollbar-width: none;
     -ms-overflow-style: none;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 ::-webkit-scrollbar {
@@ -328,4 +328,233 @@ a {
     color: #ec3750;
     text-align: left;
     font-size: 48px !important;
+}
+
+.restoration_section .heading h4,
+.restoration_section .heading p {
+    font-family: poppins, sans-serif;
+    color: #3d3d3d;
+}
+
+.restoration_section .heading h2 {
+    font-size: 60px;
+}
+
+.restoration_section .heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.flow_card img {
+    width: 254px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flow_card .heading h2 {
+    font-size: 24px;
+}
+
+.flow_card .heading {
+    display: flex;
+    gap: 10px;
+}
+
+.flow_card .heading .tag {
+    font-family: poppins, sans-serif;
+    color: #fff;
+    width: 33px;
+    height: 27px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flow_card {
+    border: 2px solid black;
+    display: flex;
+    width: 768px;
+    height: 146px;
+    margin: 0 auto;
+    box-shadow: 5px 4px black;
+}
+
+.flow_card .txt p {
+    font-family: poppins, sans-serif;
+    color: grey;
+}
+
+.flow_card .txt {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.flow {
+    position: relative;
+    width: 100%;
+    height: 170px;
+}
+
+.top-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 79px;
+    background: #000;
+    transform: translateX(-50%);
+}
+
+.horizontal-line {
+    position: absolute;
+    top: 77px;
+    left: 25.8%;
+    width: 48.4%;
+    height: 4px;
+    background: #000;
+}
+
+.left-line,
+.right-line {
+    position: absolute;
+    top: 77px;
+    width: 4px;
+    height: 73px;
+    background: #000;
+}
+
+.left-line {
+    left: 25.8%;
+}
+
+.right-line {
+    left: 74.2%;
+}
+
+.and-or {
+    position: absolute;
+    top: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 108px;
+    height: 42px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    background: #f5efd5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 16px;
+    color: #555;
+    z-index: 1;
+}
+
+.arrow {
+    position: absolute;
+    top: 149px;
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 18px solid #000;
+    transform: translateX(-50%);
+}
+
+.left-arrow {
+    left: 25.8%;
+}
+
+.right-arrow {
+    left: 74.2%;
+}
+
+.flow_cart_step1_card_section {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.flow_cart_step1_card2 {
+    box-shadow: rgb(236, 55, 80) 6px 6px 0px;
+}
+
+.flow_cart_step1_card1 {
+    box-shadow: rgb(255, 140, 55) 6px 6px 0px;
+}
+
+.flow_cart_step1_card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.flow_cart_step1_card p {
+    font-family: poppins, sans-serif;
+    color: grey;
+}
+
+.flow_cart_step1_card {
+    width: 725px;
+    height: 144px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.flow_bottom {
+    position: relative;
+    width: 100%;
+    height: 175px;
+    background: #f5efd5;
+}
+
+.flow_bottom .side {
+    position: absolute;
+    top: 0;
+    width: 5px;
+    height: 84px;
+    background: #000;
+}
+
+.flow_bottom .left {
+    left: 25.8%;
+}
+
+.flow_bottom .right {
+    left: 74.2%;
+}
+
+.flow_bottom .bottom-line {
+    position: absolute;
+    top: 81px;
+    left: 25.8%;
+    width: 48.4%;
+    height: 5px;
+    background: #000;
+}
+
+.down-line {
+    position: absolute;
+    top: 83px;
+    left: 52.5%;
+    width: 5px;
+    height: 70px;
+    background: #000;
+}
+
+.down-arrow {
+    position: absolute;
+    top: 153px;
+    left: 52.5%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #000;
 }
