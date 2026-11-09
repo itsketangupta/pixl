@@ -330,276 +330,816 @@ a {
     font-size: 48px !important;
 }
 
-.restoration_section .heading h4,
-.restoration_section .heading p {
-    font-family: poppins, sans-serif;
-    color: #3d3d3d;
+.The_Restoration {
+    width: min(1600px, 100%);
+    margin: auto;
+    padding: 0 28px 90px;
+    position: relative;
+    overflow: hidden;
 }
 
-.restoration_section .heading h2 {
-    font-size: 60px;
+* {
+    box-sizing: border-box;
 }
 
-.restoration_section .heading {
+.how_it_works_hero {
     text-align: center;
-    margin-bottom: 50px;
+    padding: 8px 15px 58px;
 }
 
-.flow_card img {
-    width: 254px;
+.eyebrow_how_it_works {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #887c6c;
+    margin-bottom: 17px;
+}
+
+.how_it_works_hero h1 {
+    font-size: 54px;
+    line-height: 1.35;
+    margin-bottom: 22px;
+}
+
+.how_it_works_hero p {
+    font-size: 21px;
+    line-height: 1.5;
+    color: #746b61;
+    max-width: 700px;
+    margin: auto;
+}
+
+.flow_how_it_works {
+    position: relative;
+}
+
+.how_it_works_txt {
+    padding: 30px 35px;
+    flex: 1;
+    min-width: 0;
+}
+
+.how_card {
+    background-color: #fffaf8;
+    border: 3px solid #080808;
+    box-shadow: 7px 7px #ff8a2a;
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+}
+
+.how_card h2,
+.mini_how_it_works h3 {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.how_card p,
+.mini_how_it_works p {
+    font-size: 18px;
+    line-height: 1.55;
+    color: #625b55;
+    margin: 0;
+}
+
+.step_head_how_it_works {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.step_head_how_it_works h2 {
+    margin: 0;
+}
+
+.num_how_it_works {
+    background-color: #050505;
+    color: #fff;
+    padding: 8px 10px;
+    font-weight: 700;
+    font-size: 16px;
+    min-width: 40px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.orange_how_it_works {
+    background-color: #ff8a2a;
+}
+
+.pink_how_it_works {
+    background-color: #f33459;
+}
+
+.img_how_it_works,
+.image_how_it_works {
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.img_how_it_works img,
+.image_how_it_works img {
+    display: block;
+    width: 100%;
     height: 100%;
     object-fit: cover;
+    max-width: 100%;
 }
 
-.flow_card .heading h2 {
-    font-size: 24px;
-}
-
-.flow_card .heading {
-    display: flex;
-    gap: 10px;
-}
-
-.flow_card .heading .tag {
-    font-family: poppins, sans-serif;
-    color: #fff;
-    width: 33px;
-    height: 27px;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flow_card {
-    border: 2px solid black;
-    display: flex;
-    width: 768px;
-    height: 146px;
+.step_one_how_it_works {
+    max-width: 820px;
     margin: 0 auto;
-    box-shadow: 5px 4px black;
+    height: 150px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
-.flow_card .txt p {
-    font-family: poppins, sans-serif;
-    color: grey;
-}
-
-.flow_card .txt {
-    padding: 20px;
-    width: 100%;
+.step_one_how_it_works .img_how_it_works {
+    width: 35%;
     height: 100%;
 }
 
-.flow {
-    position: relative;
+.step_one_how_it_works .how_it_works_txt {
+    flex: 1;
+    padding: 25px 30px;
+}
+
+.branch_wrap_how_it_works,
+.merge_wrap_how_it_works,
+.lower_wrap_how_it_works,
+.end_wrap_how_it_works {
     width: 100%;
-    height: 170px;
 }
 
-.top-line {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 4px;
-    height: 79px;
-    background: #000;
-    transform: translateX(-50%);
+.branch_wrap_how_it_works {
+    height: 155px;
 }
 
-.horizontal-line {
-    position: absolute;
-    top: 77px;
-    left: 25.8%;
-    width: 48.4%;
-    height: 4px;
-    background: #000;
+.connector_how_it_works {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
 }
 
-.left-line,
-.right-line {
-    position: absolute;
-    top: 77px;
-    width: 4px;
-    height: 73px;
-    background: #000;
+.connector_how_it_works path {
+    fill: none;
+    stroke: #080808;
+    stroke-width: 3;
+    vector-effect: non-scaling-stroke;
 }
 
-.left-line {
-    left: 25.8%;
+.connector_how_it_works .arrow_how_it_works {
+    fill: #080808;
+    stroke: none;
 }
 
-.right-line {
-    left: 74.2%;
+.branch_grid_how_it_works {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px;
 }
 
-.and-or {
-    position: absolute;
-    top: 59px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 108px;
-    height: 42px;
-    border: 2px solid #000;
-    border-radius: 30px;
-    background: #f5efd5;
+.branch_grid_how_it_works .how_card {
+    padding: 30px 35px;
+    min-height: 155px;
+}
+
+.branch_grid_how_it_works .how_card:nth-child(2) {
+    box-shadow: 7px 7px #f33459;
+}
+
+.merge_wrap_how_it_works {
+    height: 155px;
+}
+
+.step_two_how_it_works {
+    max-width: 960px;
+    height: 150px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-family: monospace;
-    font-size: 16px;
-    color: #555;
-    z-index: 1;
+    padding: 0;
+    overflow: hidden;
 }
 
-.arrow {
-    position: absolute;
-    top: 149px;
-    width: 0;
-    height: 0;
-    border-left: 14px solid transparent;
-    border-right: 14px solid transparent;
-    border-top: 18px solid #000;
-    transform: translateX(-50%);
+.step_two_how_it_works .image_how_it_works {
+    width: 35%;
+    height: 100%;
 }
 
-.left-arrow {
-    left: 25.8%;
+.step_two_how_it_works .how_it_works_txt {
+    padding: 26px 34px;
+    flex: 1;
 }
 
-.right-arrow {
-    left: 74.2%;
+.straight_connector_how_it_works {
+    height: 95px;
+    width: 100%;
 }
 
-.flow_cart_step1_card_section {
-    display: flex;
-    justify-content: center;
+.energy_card_how_it_works {
+    max-width: 960px;
     margin: 0 auto;
-    gap: 30px;
+    box-shadow: 7px 7px #ff8a2a;
+    padding: 30px 35px;
 }
 
-.flow_cart_step1_card2 {
-    box-shadow: rgb(236, 55, 80) 6px 6px 0px;
-}
-
-.flow_cart_step1_card1 {
-    box-shadow: rgb(255, 140, 55) 6px 6px 0px;
-}
-
-.flow_cart_step1_card h3 {
-    font-size: 24px;
+.energy_card_how_it_works .step_head_how_it_works {
     margin-bottom: 10px;
 }
 
-.flow_cart_step1_card p {
-    font-family: poppins, sans-serif;
-    color: grey;
+.spark_how_it_works {
+    font-size: 24px;
+    color: #ff8a2a;
+    flex-shrink: 0;
 }
 
-.flow_cart_step1_card {
-    width: 725px;
-    height: 144px;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+.pink_spark_how_it_works {
+    color: #f33459;
 }
 
-.flow_bottom {
+.tiers_how_it_works {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tier_how_it_works {
+    border: 2px solid #080808;
+    padding: 12px 8px;
+    text-align: center;
+    font-size: 14px;
+    min-width: 0;
+}
+
+.tier_how_it_works strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tier_how_it_works span {
+    color: #746b61;
+}
+
+.loop_area_how_it_works {
     position: relative;
-    width: 100%;
-    height: 175px;
-    background: #f5efd5;
 }
 
-.flow_bottom .side {
-    position: absolute;
-    top: 0;
-    width: 5px;
-    height: 84px;
-    background: #000;
+.lower_wrap_how_it_works {
+    height: 150px;
 }
 
-.flow_bottom .left {
-    left: 25.8%;
+.outcomes_how_it_works {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px;
+    align-items: stretch;
 }
 
-.flow_bottom .right {
-    left: 74.2%;
+.paid_card_how_it_works {
+    box-shadow: 7px 7px #f33459;
+    padding: 30px 35px;
+    min-height: 456px;
 }
 
-.flow_bottom .bottom-line {
-    position: absolute;
-    top: 81px;
-    left: 25.8%;
-    width: 48.4%;
-    height: 5px;
-    background: #000;
-}
-
-.down-line {
-    position: absolute;
-    top: 83px;
-    left: 50%;
-    width: 5px;
-    height: 70px;
-    background: #000;
-}
-
-.down-arrow {
-    position: absolute;
-    top: 153px;
-    left: 50.15%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 20px solid #000;
-}
-
-.flow_arrow_bottom .bottom-line {
-    position: absolute;
-    top: 81px;
-    left: 25.8%;
-    width: 48.4%;
-    height: 5px;
-    background: #000;
-}
-
-.down_line {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 5px;
-    height: 70px;
-    background: #000;
-}
-
-.down_arrow {
-    position: absolute;
-    top: 70px;
-    left: 50.15%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 20px solid #000;
-}
-
-.flow-bottom {
-    position: relative;
-    width: 100%;
-    height: 92px;
-    background: #f5efd5;
-}
-
-.flow_cart_step3 {
-    border: 2px solid black;
+.rate_how_it_works {
     display: flex;
-    width: 768px;
-    box-shadow: rgb(255, 140, 55) 6px 6px 0px;
-    height: 188px;
+    align-items: center;
+    gap: 12px;
+    margin: 18px 0 8px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.rate_line_how_it_works {
+    height: 7px;
+    background-color: #f33459;
+    flex: 1;
+    position: relative;
+}
+
+.rate_line_how_it_works::after {
+    content: '';
+    position: absolute;
+    right: -7px;
+    top: -6px;
+    border-left: 13px solid #f33459;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+}
+
+.sub_how_it_works {
+    font-size: 14px !important;
+    color: #9a8e80 !important;
+}
+
+.world_card_how_it_works {
+    box-shadow: 7px 7px #ff8a2a;
+    display: flex;
+    align-items: center;
+    max-width: 820px;
     margin: 0 auto;
+    min-height: 196px;
+}
+
+.world_card_how_it_works .img_how_it_works {
+    width: 35%;
+    height: 196px;
+}
+
+.world_card_how_it_works .how_it_works_txt {
+    padding: 24px;
+}
+
+.mini_how_it_works {
+    background-color: #fffaf8;
+    border: 3px solid #080808;
+    box-shadow: 5px 5px black;
+    padding: 20px;
+    margin-top: 18px;
+}
+
+.mini_how_it_works h3 {
+    font-size: 13px;
+    margin-bottom: 9px;
+}
+
+.mini_how_it_works p {
+    font-size: 16px;
+}
+
+.end_wrap_how_it_works {
+    height: 155px;
+}
+
+.examples_how_it_works {
+    background-color: #fffaf8;
+    border: 3px solid #080808;
+    box-shadow: 7px 7px #f33459;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.examples_how_it_works h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.examples_how_it_works>p {
+    font-size: 18px;
+    color: #746b61;
+    max-width: 730px;
+    margin: 0 auto 35px;
+    line-height: 1.5;
+}
+
+.example_row_how_it_works {
+    background-color: #f5efcf;
+    border: 2px solid #080808;
+    padding: 25px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.2fr;
+    gap: 20px;
+    align-items: center;
+    text-align: left;
+    margin: 16px 0;
+    min-width: 0;
+}
+
+.example_row_how_it_works strong {
+    font-size: 38px;
+    display: block;
+}
+
+.energy_value_how_it_works {
+    color: #ff8a2a;
+}
+
+.pixels_how_it_works {
+    color: #f33459;
+}
+
+.example_row_how_it_works small {
+    color: #887c6c;
+    font-size: 14px;
+}
+
+.product_how_it_works {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #746b61;
+    min-width: 0;
+}
+
+.placeholder_how_it_works {
+    width: 70px;
+    height: 55px;
+    /* display: grid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.examples_note_how_it_works {
+    margin: 22px auto 0 !important;
+}
+
+@media (max-width: 1000px) {
+
+    .The_Restoration {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .how_it_works_hero h1 {
+        font-size: 44px;
+    }
+
+    .how_it_works_hero p {
+        font-size: 19px;
+    }
+
+    .step_one_how_it_works,
+    .step_two_how_it_works,
+    .energy_card_how_it_works {
+        max-width: 100%;
+    }
+
+    .branch_grid_how_it_works,
+    .outcomes_how_it_works {
+        gap: 20px;
+    }
+
+    .branch_grid_how_it_works .how_card {
+        padding: 25px;
+    }
+
+    .how_it_works_txt {
+        padding: 24px;
+    }
+
+    .example_row_how_it_works {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .example_row_how_it_works strong {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 639px) {
+    .what_pixl_section p {
+        width: auto;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .The_Restoration {
+        width: 100%;
+        padding: 0 16px 60px;
+        overflow: hidden;
+    }
+
+    .how_it_works_hero {
+        padding: 12px 5px 38px;
+    }
+
+    .eyebrow_how_it_works {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .how_it_works_hero h1 {
+        font-size: clamp(29px, 7vw, 36px);
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .how_it_works_hero p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .how_card {
+        width: 100%;
+        max-width: 100%;
+        padding: 22px;
+        box-shadow: 5px 5px #ff8a2a;
+    }
+
+    .how_card h2 {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    .how_card p,
+    .mini_how_it_works p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .step_head_how_it_works {
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+    }
+
+    .num_how_it_works {
+        font-size: 13px;
+        min-width: 35px;
+        padding: 7px;
+    }
+
+    .step_one_how_it_works {
+        height: auto;
+        min-height: 0;
+        max-height: none;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+    }
+
+    .step_one_how_it_works .img_how_it_works {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 6;
+    }
+
+    .step_one_how_it_works .how_it_works_txt {
+        padding: 20px;
+    }
+
+    .branch_wrap_how_it_works {
+        height: 65px;
+        display: grid;
+        place-items: center;
+        position: relative;
+    }
+
+    .branch_wrap_how_it_works .connector_how_it_works {
+        display: none;
+    }
+
+    .branch_wrap_how_it_works::before {
+        content: "and/or";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #f5efcf;
+        border: 2px solid #080808;
+        border-radius: 30px;
+        padding: 7px 20px;
+        font-size: 13px;
+        z-index: 2;
+    }
+
+    .branch_grid_how_it_works {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .branch_grid_how_it_works .how_card {
+        min-height: 0;
+        padding: 22px;
+    }
+
+    .branch_grid_how_it_works .how_card:nth-child(2) {
+        box-shadow: 5px 5px #f33459;
+    }
+
+    .branch_grid_how_it_works .how_card+.how_card::before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 25px;
+        background: #080808;
+        top: -27px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .branch_grid_how_it_works .how_card+.how_card::after {
+        content: "";
+        position: absolute;
+        top: -9px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;
+        border-top: 13px solid #080808;
+    }
+
+    .merge_wrap_how_it_works {
+        display: none;
+    }
+
+    .step_two_how_it_works {
+        width: 100%;
+        max-width: 100%;
+        max-height: none;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+    }
+
+    .step_two_how_it_works .image_how_it_works {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 6;
+    }
+
+    .step_two_how_it_works .how_it_works_txt {
+        padding: 20px;
+    }
+
+    .straight_connector_how_it_works {
+        height: 65px;
+    }
+
+    .energy_card_how_it_works {
+        width: 100%;
+        padding: 22px;
+    }
+
+    .energy_card_how_it_works .step_head_how_it_works h2 {
+        flex: 1;
+    }
+
+    .tiers_how_it_works {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+        margin-top: 18px;
+    }
+
+    .tier_how_it_works {
+        padding: 12px 5px;
+        font-size: 12px;
+    }
+
+    .tier_how_it_works strong {
+        font-size: 12px;
+    }
+
+    .tier_how_it_works span {
+        font-size: 11px;
+    }
+
+    .lower_wrap_how_it_works {
+        height: 65px;
+    }
+
+    .outcomes_how_it_works {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .paid_card_how_it_works {
+        height: auto;
+        min-height: 0;
+        padding: 22px;
+    }
+
+    .world_card_how_it_works {
+        height: auto;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+    }
+
+    .world_card_how_it_works .img_how_it_works {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 7;
+    }
+
+    .world_card_how_it_works .how_it_works_txt {
+        padding: 20px;
+    }
+
+    .mini_how_it_works {
+        margin-top: 16px;
+        padding: 18px;
+    }
+
+    .mini_how_it_works h3 {
+        font-size: 14px;
+    }
+
+    .end_wrap_how_it_works {
+        height: 65px;
+    }
+
+    .examples_how_it_works {
+        padding: 25px 18px;
+        width: 100%;
+    }
+
+    .examples_how_it_works h2 {
+        font-size: 19px;
+    }
+
+    .examples_how_it_works>p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .example_row_how_it_works {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px 12px;
+        padding: 18px;
+        margin: 14px 0;
+    }
+
+    .example_row_how_it_works strong {
+        font-size: clamp(24px, 7vw, 32px);
+    }
+
+    .example_row_how_it_works small {
+        font-size: 12px;
+    }
+
+    .product_how_it_works {
+        grid-column: 1 / -1;
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .placeholder_how_it_works {
+        width: 55px;
+        height: 45px;
+    }
+
+    .examples_note_how_it_works {
+        font-size: 12px !important;
+        margin-top: 20px !important;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .The_Restoration {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .how_card {
+        padding: 17px;
+    }
+
+    .how_it_works_hero h1 {
+        font-size: 29px;
+    }
+
+    .how_it_works_hero p {
+        font-size: 14px;
+    }
+
+    .step_head_how_it_works {
+        gap: 8px;
+    }
+
+    .how_card h2 {
+        font-size: 14px;
+    }
+
+    .how_card p {
+        font-size: 14px;
+    }
+
+    .energy_card_how_it_works {
+        padding: 17px;
+    }
+
+    .tier_how_it_works {
+        padding: 10px 3px;
+    }
+
+    .example_row_how_it_works {
+        padding: 14px;
+    }
+
+    .example_row_how_it_works strong {
+        font-size: 24px;
+    }
+
 }
