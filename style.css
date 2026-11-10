@@ -342,12 +342,12 @@ a {
     box-sizing: border-box;
 }
 
-.how_it_works_hero {
+.hero_headers {
     text-align: center;
     padding: 8px 15px 58px;
 }
 
-.eyebrow_how_it_works {
+.headers_txt {
     font-size: 16px;
     letter-spacing: 2px;
     font-weight: 700;
@@ -355,13 +355,17 @@ a {
     margin-bottom: 17px;
 }
 
-.how_it_works_hero h1 {
+.hero_headers h1 {
     font-size: 54px;
     line-height: 1.35;
     margin-bottom: 22px;
 }
 
-.how_it_works_hero p {
+.hero_headers p:nth-child(2) {
+    font-family: poppins, sans-serif;
+}
+
+.hero_headers p {
     font-size: 21px;
     line-height: 1.5;
     color: #746b61;
@@ -758,11 +762,11 @@ a {
         padding-right: 22px;
     }
 
-    .how_it_works_hero h1 {
+    .hero_headers h1 {
         font-size: 44px;
     }
 
-    .how_it_works_hero p {
+    .hero_headers p {
         font-size: 19px;
     }
 
@@ -809,22 +813,22 @@ a {
         overflow: hidden;
     }
 
-    .how_it_works_hero {
+    .hero_headers {
         padding: 12px 5px 38px;
     }
 
-    .eyebrow_how_it_works {
+    .headers_txt {
         font-size: 13px;
         margin-bottom: 12px;
     }
 
-    .how_it_works_hero h1 {
+    .hero_headers h1 {
         font-size: clamp(29px, 7vw, 36px);
         line-height: 1.2;
         margin-bottom: 15px;
     }
 
-    .how_it_works_hero p {
+    .hero_headers p {
         font-size: 16px;
         line-height: 1.6;
     }
@@ -1106,11 +1110,11 @@ a {
         padding: 17px;
     }
 
-    .how_it_works_hero h1 {
+    .hero_headers h1 {
         font-size: 29px;
     }
 
-    .how_it_works_hero p {
+    .hero_headers p {
         font-size: 14px;
     }
 
