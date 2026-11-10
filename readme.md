@@ -44,7 +44,7 @@ First the importent to use in html and css ::before and ::after to make the flow
 
 ## Demo link 
 
-![alt text](assests/{C921A62F-A198-41E3-830A-75A74B69880B}.png)
+<img width="1920" height="1001" alt="{A6CAEA1C-915E-4963-B230-4ADF7DD34DE5}" src="https://github.com/user-attachments/assets/a35a2284-96ae-4f3c-8b1a-3178fe868d4e" />
 
 [Pixl Clone](https://pixl-clone.vercel.app/)
 
