@@ -9,7 +9,7 @@ I just thinking lets make a pixl landing page clone to test mine skills and feed
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/itsketangupta/Quizify.git
+git clone https://github.com/itsketangupta/pixl.git
 ```
 
 ### 2. Open the project folder
