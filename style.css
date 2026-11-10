@@ -1147,3 +1147,63 @@ a {
     }
 
 }
+
+.explain_card_section {
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.explain_section_track {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    animation: infinite_scroll 35s linear infinite;
+}
+
+.explain_card_section:hover .explain_section_track {
+    animation-play-state: paused;
+}
+
+.explain_card_section_card {
+    width: 320px;
+    height: 357px;
+    flex-shrink: 0;
+    background: white;
+    color: #181818;
+    border: 2px solid #181818;
+}
+
+@keyframes infinite_scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 10px));
+    }
+}
+
+@media (max-width: 768px) {
+    .explain_card_section_card {
+        width: 220px;
+        height: 280px;
+    }
+
+    .explain_section_track {
+        gap: 14px;
+        animation-duration: 25s;
+    }
+}
+
+.explain_card_green {
+    box-shadow: 6px 6px 0 #4ade80;
+}
+
+.explain_card_orange {
+    box-shadow: 6px 6px 0 #ff8c37;
+}
+
+.explain_card_red {
+    box-shadow: 6px 6px 0 #ec3750;
+}
