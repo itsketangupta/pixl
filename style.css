@@ -1406,3 +1406,286 @@ a {
 .the_shop_section {
     margin-bottom: 100px;
 }
+
+.faq_section {
+    width: 100%;
+    padding: 30px 7.3% 60px;
+}
+
+.faq_heading {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.faq_heading p {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #827b68;
+    margin-bottom: 10px;
+}
+
+.faq_heading h1 {
+    font-size: clamp(42px, 6vw, 68px);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.faq_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.faq_item:hover {
+    box-shadow: 8px 8px 0 #ec3750;
+}
+
+.faq_item.active:hover {
+    box-shadow: 8px 8px 0 #ec3750;
+}
+
+.faq_item {
+    width: 796px;
+    background: #fffaf8;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 0 #000;
+    transition: box-shadow 0.2s ease;
+    margin: 0 auto;
+}
+
+.faq_item.active {
+    box-shadow: 8px 8px 0 #ff9438;
+}
+
+.faq_question {
+    width: 100%;
+    min-height: 87px;
+    padding: 20px 30px;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-align: left;
+    cursor: url('assets/cursor-pointer.png'), pointer;
+}
+
+.faq_question h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.faq_arrow {
+    width: 12px;
+    height: 12px;
+    border-right: 3px solid #ff3855;
+    border-bottom: 3px solid #ff3855;
+    transform: rotate(-45deg);
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+}
+
+.faq_item.active .faq_arrow {
+    transform: rotate(45deg);
+}
+
+.faq_answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+}
+
+.faq_answer p {
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.faq_item.active .faq_answer {
+    grid-template-rows: 1fr;
+}
+
+.faq_item.active .faq_answer p {
+    padding: 20px 40px 26px;
+    border-top: 2px solid #000;
+}
+
+@media (max-width: 922px) {
+    .faq_item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq_section {
+        padding: 35px 6% 50px;
+    }
+
+    .faq_heading {
+        margin-bottom: 35px;
+    }
+
+    .faq_question {
+        min-height: 75px;
+        padding: 18px 20px;
+        gap: 15px;
+    }
+
+    .faq_question h3 {
+        font-size: 19px;
+    }
+
+    .faq_answer p {
+        font-size: 17px;
+    }
+
+    .faq_item.active .faq_answer p {
+        padding: 18px 20px 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq_heading h1 {
+        font-size: 43px;
+    }
+
+    .faq_question {
+        padding: 16px;
+    }
+
+    .faq_question h3 {
+        font-size: 17px;
+    }
+
+    .faq_answer p {
+        font-size: 15px;
+    }
+
+    .faq_item {
+        box-shadow: 5px 5px 0 #000;
+    }
+
+    .faq_item.active {
+        box-shadow: 5px 5px 0 #ff9438;
+    }
+
+    .faq_item:hover {
+        box-shadow: 5px 5px 0 #ec3750;
+    }
+
+    .faq_item.active:hover {
+        box-shadow: 5px 5px 0 #ec3750;
+    }
+
+}
+
+nav {
+    background-color: white;
+    border-top: 2px solid black;
+    padding: 40px 80px;
+}
+
+nav span:hover {
+    color: #ff8c37 !important;
+    cursor: url('assets/cursor-pointer.png'), pointer;
+}
+
+nav h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+nav p {
+    color: grey;
+    width: 50%;
+    line-height: 1.5rem;
+    font-size: 18px;
+    color: color-mix(in oklab, black 70%, transparent);
+    margin-top: 20px;
+}
+
+nav p a {
+    color: color-mix(in oklab, black 70%, transparent);
+    text-decoration: underline;
+}
+
+nav p a:hover {
+    color: #ec3750;
+}
+
+.nav_header {
+    border-bottom: 2px solid black;
+    padding-bottom: 40px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 2px solid grey;
+    padding-bottom: 40px;
+}
+
+.link ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.link ul li a {
+    color: color-mix(in oklab, black 70%, transparent);
+}
+
+.ending_line p {
+    font-size: 14px;
+}
+
+.ending_line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ending_line p a:hover {
+    color: #ec3750;
+}
+
+@media (max-width: 699px) {
+    .nav_header p {
+        width: 100%;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .ending_line {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ending_line p {
+        text-align: left !important;
+    }
+
+    nav {
+        background-color: white;
+        border-top: 2px solid black;
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width: 311px) {
+    nav {
+        padding: 10px 20px;
+    }
+}
