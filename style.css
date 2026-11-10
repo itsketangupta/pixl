@@ -7,12 +7,12 @@
     box-sizing: border-box;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    cursor: url('assests/cursor-arrow.png'), auto;
+    cursor: url('assets/cursor-arrow.png'), auto;
 }
 
 a,
 button {
-    cursor: url('assests/cursor-pointer.png'), pointer;
+    cursor: url('assets/cursor-pointer.png'), pointer;
 }
 
 ::-webkit-scrollbar {
@@ -54,7 +54,7 @@ body {
 }
 
 .right_top_hero_docs_button button {
-    cursor: url('assests/cursor-pointer.png'), pointer;
+    cursor: url('assets/cursor-pointer.png'), pointer;
     position: absolute;
     top: 0;
     background-color: #ff8c37;
@@ -351,7 +351,7 @@ a {
 }
 
 .headers_txt {
-    font-size: 16px;
+    font-size: 14px !important;
     letter-spacing: 2px;
     font-weight: 700;
     color: #887c6c;
@@ -373,6 +373,7 @@ a {
     line-height: 1.5;
     color: #746b61;
     max-width: 700px;
+    font-family: poppins, sans-serif;
     margin: auto;
 }
 
@@ -1151,6 +1152,7 @@ a {
 }
 
 .explain_card_section {
+    margin-bottom: 100px;
     width: 100%;
     overflow: hidden;
     padding: 30px 0;
@@ -1339,4 +1341,68 @@ a {
     font-size: 17px;
     font-weight: 400;
     color: #77716f;
+}
+
+.items_section {
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.items_row {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    animation: infinite_scroll 35s linear infinite;
+}
+
+.items_section:hover .items_row {
+    animation-play-state: paused;
+}
+
+.shop_items img {
+    width: 280px;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes infinite_scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 10px));
+    }
+}
+
+@media (max-width: 768px) {
+    .shop_items {
+        width: 220px;
+        height: 280px;
+    }
+
+    .items_row {
+        gap: 14px;
+        animation-duration: 120s;
+    }
+}
+
+.the_shop_section button {
+    position: absolute;
+    left: calc(50% - 112px);
+    background-color: #ff8c37;
+    box-shadow: rgb(0, 0, 0) 4px 4px 0px;
+    border: 2px solid black;
+    width: 224px;
+    height: 51px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url('assets/cursor-pointer.png'), pointer;
+}
+
+.the_shop_section {
+    margin-bottom: 100px;
 }
